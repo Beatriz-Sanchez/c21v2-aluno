@@ -1,4 +1,4 @@
-class Solo {
+class Ground {
   constructor(x, y, w, h) {
     let options = {
       isStatic:true
