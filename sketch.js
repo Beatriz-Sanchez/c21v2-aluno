@@ -6,8 +6,8 @@ let engine;
 let world;
 
 var ground;
-var left;
-var right;
+var left_wall;
+var right_wall;
 var top_wall;
 
 function setup() {
@@ -16,8 +16,8 @@ function setup() {
   world = engine.world;
   
   ground =new Ground(200,390,400,20);
-  right = new Ground(390,200,20,400);
-  left = new Ground(10,200,20,400);
+  right_wall = new Ground(390,200,20,400);
+  left_wall = new Ground(10,200,20,400);
   top_wall = new Ground(200,10,400,20);
  
   rectMode(CENTER);
@@ -28,8 +28,8 @@ function draw() {
   background(51);
   ground.show();
   top_wall.show();
-  left.show();
-  right.show();
+  left_wall.show();
+  right_wall.show();
   Engine.update(engine);
 }
 
