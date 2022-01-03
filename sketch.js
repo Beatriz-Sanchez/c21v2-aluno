@@ -24,8 +24,7 @@ function setup() {
   ellipseMode(RADIUS);
 }
 
-function draw() 
-{
+function draw() {
   background(51);
   ground.show();
   top_wall.show();
